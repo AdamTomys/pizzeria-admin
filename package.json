@@ -6,9 +6,15 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
+    "node-sass": "4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-flexbox-grid": "^2.1.2",
+    "react-redux": "7.0.1",
+    "react-router-dom": "5.0.0",
+    "react-router-transitioner": "^0.1.4",
     "react-scripts": "4.0.1",
+    "redux": "4.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -23,6 +29,9 @@
       "react-app/jest"
     ]
   },
+  "lint-staged": {
+    "src/**/*.js": "eslint"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -34,5 +43,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "lint-staged": "^10.5.3",
+    "redux-devtools-extension": "2.13.8"
   }
 }
