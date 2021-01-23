@@ -21,12 +21,6 @@ Object.keys(initialState).forEach(item => {
 // combine reducers
 const storeReducer = combineReducers(reducers);
 
-// merge all reducers with globalReducer
-// const storeReducer = (state, action) => {
-//   const modifiedState = globalReducer(state, action);
-//   return combinedReducers(modifiedState, action);
-// };
-
 // create store
 const store = createStore(
   storeReducer,

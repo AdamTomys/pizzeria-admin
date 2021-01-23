@@ -8,15 +8,16 @@ const reducerName = 'global';
 const createActionName = name => `app/${reducerName}/${name}`;
 
 // action types
-export const SET_MULTIPLE_STATES = createActionName('SET_MULTIPLE_STATES');
+export const SET_STRING = createActionName('SET_STRING');
 
 // action creators
-export const setMultipleStates = payload => ({ payload, type: SET_MULTIPLE_STATES });
+export const setMultipleStates = payload => ({ payload, type: SET_STRING });
 
 // reducer
 export default function reducer(state = [], action = {}) {
+  console.log(state);
   switch (action.type) {
-    case SET_MULTIPLE_STATES: {
+    case SET_STRING: {
       return {
         ...state,
         ...action.payload,
